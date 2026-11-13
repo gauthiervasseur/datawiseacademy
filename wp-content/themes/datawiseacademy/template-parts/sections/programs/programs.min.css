@@ -1,0 +1,147 @@
+
+.programs {
+  padding-bottom: 60px;
+  z-index: 1;
+  background-color: #fff;
+}
+@media (min-width: 48em) {
+  .programs {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 62em) {
+  .programs {
+    padding-bottom: 135px;
+  }
+}
+.programs__title {
+  color: #1E1E1E;
+  margin-top: 15px;
+}
+@media (min-width: 62em) {
+  .programs__title {
+    margin-top: 30px;
+  }
+}
+.programs__text {
+  margin-bottom: 45px;
+}
+@media (min-width: 62em) {
+  .programs__text {
+    max-width: 100%;
+  }
+}
+.programs__cards.slick-slider {
+  margin-right: 0px !important;
+}
+.programs__cards .slick-list {
+  margin: 0 -13.5px;
+}
+.programs .circle-bg--right {
+  right: -10px;
+  top: -175px;
+}
+
+.card {
+  height: unset;
+  max-width: 310px;
+  margin: 0 auto;
+}
+.card:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 48em) {
+  .card:not(:last-child) {
+    margin: 0;
+  }
+}
+@media (min-width: 48em) {
+  .card {
+    padding: 0 13.5px;
+    max-width: unset;
+  }
+}
+.card__wrapper {
+  height: 100%;
+  background-color: #F0DFCD;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 24px 20px;
+  height: 100%;
+  min-height: 430px;
+  border: 1px solid #fff;
+}
+.card__wrapper:hover {
+  text-decoration: none;
+}
+.card__title {
+  color: #221F1F;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-bottom: auto;
+}
+@media (min-width: 48em) {
+  .card__title {
+    font-size: 20px;
+  }
+}
+.card__img {
+  margin-top: 55px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 36em) {
+  .card__img {
+    margin-bottom: 45px;
+  }
+}
+.card__img img {
+  width: 165px;
+  height: 160px;
+  object-fit: contain;
+  object-position: bottom;
+}
+.card__time {
+  color: #221F1F;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 136%;
+  padding: 0 16px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+@media (min-width: 36em) {
+  .card__time {
+    margin-bottom: 18px;
+  }
+}
+.card__category {
+  text-align: center;
+  color: #1E1E1E;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: var(--clr-02);
+  padding: 9px 16px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+@media (min-width: 36em) {
+  .card__category {
+    margin-bottom: 15px;
+  }
+}
+
+.blur-programs-right {
+  left: -125px;
+  top: 50%;
+}
+@media (min-width: 36em) {
+  .blur-programs-right {
+    left: initial;
+    right: -125px;
+    top: 60%;
+  }
+}

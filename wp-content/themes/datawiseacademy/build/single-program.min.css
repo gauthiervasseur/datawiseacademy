@@ -1,0 +1,152 @@
+.program {
+  padding-top: 25px;
+  padding-bottom: 150px;
+  z-index: 0;
+}
+@media (min-width: 48em) {
+  .program {
+    padding-top: 50px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 62em) {
+  .program {
+    padding-bottom: 195px;
+  }
+}
+.program__title {
+  line-height: 0.92;
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+.program__title span {
+  color: var(--clr-02);
+}
+.program__text {
+  max-width: 600px;
+  position: relative;
+}
+.program__topics p {
+  margin-bottom: 0;
+}
+.program__topics ul {
+  padding-left: 25px;
+  margin-bottom: 1.5em;
+}
+.program__btn {
+  margin-top: 50px;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .program__btn {
+    text-align: left;
+  }
+}
+@media (min-width: 62em) {
+  .program__btn {
+    text-align: initial;
+  }
+}
+@media (min-width: 75em) {
+  .program__btn {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 48em) {
+  .program__btn .btn {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 87.5em) {
+  .program__btn .btn {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.program--ai {
+  background-color: #D7D7C8;
+}
+.program--leadership {
+  background-color: #CCB6D5;
+}
+.program--expedition {
+  background-color: #B8D2E9;
+}
+
+.program-title .white-title br {
+  display: block;
+}
+
+.blur-mastering-first {
+  top: 0;
+  left: 0;
+  transform: translate(-20%, -20%);
+  filter: blur(40px);
+}
+@media (min-width: 48em) {
+  .blur-mastering-first {
+    left: 0;
+    transform: unset;
+    top: unset;
+    bottom: 350px;
+  }
+}
+
+.blur-mastering-second {
+  right: 0;
+  top: 50%;
+  transform: translateX(50%);
+  filter: blur(40px);
+}
+@media (min-width: 48em) {
+  .blur-mastering-second {
+    top: 100px;
+    transform: unset;
+    right: -30px;
+  }
+}
+
+@media (min-width: 62em) {
+  .circle-bg {
+    width: 350px;
+  }
+}
+@media (min-width: 75em) {
+  .circle-bg {
+    width: 400px;
+  }
+}
+@media (min-width: 87.5em) {
+  .circle-bg {
+    width: 475px;
+  }
+}
+
+.circle-bg--left {
+  left: calc(50% - 150px);
+  bottom: -155px;
+}
+@media (min-width: 62em) {
+  .circle-bg--left {
+    left: calc(29% - 175px);
+    bottom: -130px;
+  }
+}
+@media (min-width: 75em) {
+  .circle-bg--left {
+    left: calc(29% - 200px);
+    bottom: -150px;
+  }
+}
+@media (min-width: 87.5em) {
+  .circle-bg--left {
+    left: calc(29% - 225px);
+    bottom: -180px;
+  }
+}
+
+.circle-bg--right {
+  left: calc(100% + 5vw);
+  bottom: 0;
+}

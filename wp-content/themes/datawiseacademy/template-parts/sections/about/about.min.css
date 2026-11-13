@@ -1,0 +1,270 @@
+.about {
+  padding-bottom: 55px;
+  position: relative;
+}
+@media (min-width: 62em) {
+  .about {
+    padding-bottom: 120px;
+  }
+}
+@media (min-width: 75em) {
+  .about {
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about {
+    padding-bottom: 160px;
+  }
+}
+.about-title {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: end;
+}
+.about-title span {
+  color: var(--clr-04);
+}
+@media (min-width: 62em) {
+  .about__row {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (min-width: 62em) {
+  .about__row {
+    gap: 50px;
+  }
+}
+@media (min-width: 75em) {
+  .about__row {
+    gap: 70px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about__row {
+    gap: 100px;
+  }
+}
+@media (min-width: 62em) {
+  .about__col:first-child {
+    flex: 1;
+  }
+  .about__col:last-child {
+    flex: 1;
+  }
+}
+.about__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+@media (min-width: 48em) {
+  .about__img-wrapper {
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 62em) {
+  .about__img-wrapper {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+}
+.about__img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.about__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (min-width: 48em) {
+  .about__img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 62em) {
+  .about__img {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 75em) {
+  .about__img {
+    margin-top: 45px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about__img {
+    margin-top: 60px;
+  }
+}
+.about__text {
+  font-weight: 400;
+  line-height: 1.5;
+  padding-right: 35px;
+}
+@media (min-width: 62em) {
+  .about__text {
+    padding-right: 0;
+  }
+}
+.about__subtitle {
+  margin-top: 30px;
+}
+.about__btn {
+  margin-top: 45px;
+  text-align: center;
+}
+@media (min-width: 62em) {
+  .about__btn {
+    text-align: initial;
+  }
+}
+.about .circle-bg--left {
+  top: 75px;
+  right: -150px;
+  left: unset;
+}
+@media (min-width: 62em) {
+  .about .circle-bg--left {
+    left: -150px;
+    top: 140px;
+  }
+}
+@media (min-width: 62em) {
+  .about .circle-bg--right {
+    right: -10px;
+    bottom: -140px;
+  }
+}
+.about--page {
+  padding-bottom: 120px;
+}
+@media (min-width: 62em) {
+  .about--page {
+    padding-bottom: 240px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about--page {
+    padding-bottom: 277px;
+  }
+}
+.about--page .circle-bg--left {
+  top: 40px;
+}
+@media (min-width: 62em) {
+  .about--page .circle-bg--left {
+    top: 140px;
+  }
+}
+.about--page .blur-about-right {
+  left: unset;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+@media (min-width: 62em) {
+  .about--page .blur-about-right {
+    top: 25%;
+  }
+}
+.about--page .blur-about-bottom {
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 36em) {
+  .about--page .blur-about-bottom {
+    top: 58%;
+  }
+}
+@media (min-width: 48em) {
+  .about--page .blur-about-bottom {
+    top: 65%;
+  }
+}
+@media (min-width: 62em) {
+  .about--page .blur-about-bottom {
+    top: unset;
+    bottom: -30px;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 75em) {
+  .about--page .blur-about-bottom {
+    bottom: -50px;
+  }
+}
+@media (min-width: 62em) {
+  .about--page .circle-bg--left {
+    top: 170px;
+  }
+}
+@media (min-width: 75em) {
+  .about--page .circle-bg--left {
+    top: 190px;
+    left: 20px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about--page .circle-bg--left {
+    top: 210px;
+    left: 30px;
+  }
+}
+@media (min-width: 62em) {
+  .about--page .circle-bg--right {
+    right: calc(25% - 150px);
+    bottom: -140px;
+  }
+}
+@media (min-width: 87.5em) {
+  .about--page .circle-bg--right {
+    right: calc(25% - 175px);
+    bottom: -160px;
+  }
+}
+
+@media (min-width: 62em) {
+  .blur-about-bottom {
+    bottom: -150px;
+    left: 15%;
+    filter: blur(40px);
+  }
+}
+@media (min-width: 75em) {
+  .blur-about-bottom {
+    bottom: -200px;
+  }
+}
+
+.blur-about-right {
+  left: -100px;
+  bottom: 170px;
+}
+@media (min-width: 62em) {
+  .blur-about-right {
+    left: unset;
+    bottom: unset;
+    right: -70px;
+    top: 35%;
+    filter: blur(40px);
+  }
+}
+@media (min-width: 62em) {
+  .blur-about-right {
+    right: -140px;
+    top: 40%;
+    filter: blur(40px);
+  }
+}

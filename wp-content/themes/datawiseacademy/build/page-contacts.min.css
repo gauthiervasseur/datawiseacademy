@@ -1,0 +1,108 @@
+.site > main {
+    display: flex
+}
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--clr-04);
+  min-height:100%;
+  width: 100%;
+}
+.contacts .section-subtitle {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+@media (min-width: 62em) {
+  .contacts .section-subtitle {
+    margin-top: 37px;
+  }
+}
+@media (min-width: 75em) {
+  .contacts .section-subtitle {
+    margin-top: 47px;
+    padding-right: 100px;
+  }
+}
+.contacts .section-subtitle span {
+  color: var(--clr-02);
+  display: block;
+}
+@media (min-width: 48em) {
+  .contacts .section-subtitle span {
+    display: inline;
+  }
+}
+@media (min-width: 48em) {
+  .contacts .section-subtitle span br {
+    display: none;
+  }
+}
+.contacts__row {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (min-width: 48em) {
+  .contacts__row {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 62em) {
+  .contacts__row {
+    gap: 60px;
+  }
+}
+@media (min-width: 75em) {
+  .contacts__row {
+    gap: 80px;
+  }
+}
+@media (min-width: 87.5em) {
+  .contacts__row {
+    gap: 120px;
+  }
+}
+.contacts__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+@media (min-width: 48em) {
+  .contacts__inner {
+    max-width: 360px;
+  }
+}
+.contacts__text {
+  padding: 16px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+}
+.contacts__address {
+  margin-bottom: 1rem;
+}
+@media (min-width: 36em) {
+  .contacts__address br {
+    display: none;
+  }
+}
+@media (min-width: 48em) {
+  .contacts__socials {
+    margin-bottom: 30px;
+  }
+}
+.contacts__socials .social-link {
+  background-color: var(--clr-02);
+}
+.contacts__socials .social-link .pi:after {
+  background-color: var(--clr-04);
+}
+.contacts__socials .social-link:hover {
+  background-color: var(--clr-01);
+}
+.contacts__socials .social-link:hover .pi:after {
+  background-color: var(--clr-02);
+}
