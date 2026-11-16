@@ -478,8 +478,48 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 /* Pin "Specialties" + LinkedIn to the bottom of each card, so they align even when a name wraps */
 .team--instructors .team__col { display: flex; }
 .team--instructors .person { width: 100%; }
-.team--instructors .person__more { margin-top: auto; }
+/* Skill tags replace the "Specialties" toggle; LinkedIn is pinned to the bottom so icons align across a row */
+.person__tags { list-style: none; padding: 0; margin: 4px 0 14px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.person__tags li { white-space: nowrap; font-size: 12px; font-weight: 600; line-height: 1.2; padding: 4px 10px; border-radius: 999px; background: var(--clr-05); color: #1E1E1E; }
+.person__tags li mark.pending { padding: 0; background: none; }
+.person__tags li:has(mark.pending) { background: #FFE58A; }
+.team--instructors .person__social { margin-top: auto; }
+@media (max-width: 47.99em) { .person__tags li { font-size: 11px; padding: 3px 8px; } }
 
 /* Facilitators: bring names closer to the photos (theme adds up to 40px margin + 20px padding below each photo) */
 .team--instructors .person__img { padding: 0; margin-bottom: 16px; }
 @media (max-width: 47.99em) { .team--instructors .person__img { margin-bottom: 10px; } }
+
+/* Facilitators: align photo, name, role line, tags and LinkedIn across each row.
+   Each card spans 5 rows of the shared grid (subgrid), so every part lines up with its neighbours
+   and the tallest item in a row sets that row's height. */
+.team--instructors .team__row { row-gap: 0; }
+.team--instructors .team__col { display: contents; }
+.team--instructors .person {
+  grid-row: span 5;
+  display: grid;
+  grid-template-rows: subgrid;
+  row-gap: 0;
+  height: auto;
+  width: auto;
+  min-width: 0;
+  align-content: start;
+}
+.team--instructors .person__position { min-height: 0; align-items: flex-start; }
+.team--instructors .person__tags { align-content: flex-start; margin-bottom: 12px; }
+.team--instructors .person__social { margin-top: 0; margin-bottom: 44px; }
+@media (max-width: 47.99em) { .team--instructors .person__social { margin-bottom: 30px; } }
+
+/* Phones: columns are narrow, so long tags may wrap inside their pill */
+@media (max-width: 47.99em) { .person__tags li { white-space: normal; max-width: 100%; text-align: center; } }
+
+/* Tablets: four narrow columns, so tags may wrap too */
+@media (min-width: 48em) and (max-width: 61.99em) { .person__tags li { white-space: normal; max-width: 100%; text-align: center; font-size: 11px; } }
+
+/* Keep each card's inner column to the card width (photo shrinks to fit on tablets) */
+.team--instructors .person { grid-template-columns: minmax(0, 1fr); }
+
+/* The theme stylesheet loads after this file and resets the photo to 200px; an ID selector makes the fluid width win */
+#assistants .person__img img { width: 100%; max-width: 200px; height: auto; }
+@media (min-width: 87.5em) { #assistants .person__img img { max-width: 230px; } }
+@media (max-width: 47.99em) { #assistants .person__img img { max-width: 130px; } }
