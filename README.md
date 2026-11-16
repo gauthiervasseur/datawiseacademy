@@ -27,6 +27,10 @@ The original Contact Form 7 (WordPress) form was replaced by a static form that 
 
 **Setup:** create a form at formspree.io, then replace `YOUR_FORM_ID` in the `action` attribute of the form in both pages with your form ID. Until then, submitting shows "The contact form is not configured yet".
 
+## 404 page
+
+`404.html` is the theme's "page not found" page. GitHub Pages serves it for any missing URL, at any depth, so its links and assets use root-absolute paths (`/wp-content/...`). It is fully styled on the custom domain. On the `github.io/datawiseacademy/` preview URL it appears unstyled, which is expected.
+
 ## Known limitations
 
 - WordPress leftovers: `hello-world/`, `sample-page/`, `category/`, `author/` (can be deleted).
