@@ -323,3 +323,10 @@
 
 /* Footer font set here too: on the thank-you page the footer sits outside .site (original markup closes it early). */
 .footer { font-family: Montserrat, sans-serif; color: var(--clr-01); }
+
+
+/* Closing call to action: on the beige variant (program pages), white text is hard to read, so use brand orange */
+.cta.bg-clr-5 .section-title span { color: var(--clr-04); }
+
+/* Contact page: social icons removed (they are in the footer), so drop the space that was reserved for them */
+.page-contacts .contacts__text { margin-bottom: 0; }
