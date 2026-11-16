@@ -459,3 +459,23 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
   .team--instructors .person__position { font-size: 13px; }
   .person__more { font-size: 13px; margin-bottom: 10px; }
 }
+
+/* Facilitators: an even grid, 4 per row from tablet up (8 people = 2 rows of 4) */
+@media (min-width: 48em) {
+  .team--instructors .team__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 24px;
+    justify-content: stretch;
+  }
+  .team--instructors .team__col { width: auto; max-width: none; min-width: 0; }
+  .team--instructors .person__img img { width: 100%; max-width: 200px; }
+}
+@media (min-width: 87.5em) { .team--instructors .team__row { gap: 50px 40px; } .team--instructors .person__img img { max-width: 230px; } }
+/* Reserve two lines for every role line so the "Specialties" toggles and LinkedIn icons align across a row */
+.team--instructors .person__position { min-height: calc(2 * 1.36em); display: flex; align-items: flex-start; justify-content: center; }
+
+/* Pin "Specialties" + LinkedIn to the bottom of each card, so they align even when a name wraps */
+.team--instructors .team__col { display: flex; }
+.team--instructors .person { width: 100%; }
+.team--instructors .person__more { margin-top: auto; }
