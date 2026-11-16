@@ -479,3 +479,7 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .team--instructors .team__col { display: flex; }
 .team--instructors .person { width: 100%; }
 .team--instructors .person__more { margin-top: auto; }
+
+/* Facilitators: bring names closer to the photos (theme adds up to 40px margin + 20px padding below each photo) */
+.team--instructors .person__img { padding: 0; margin-bottom: 16px; }
+@media (max-width: 47.99em) { .team--instructors .person__img { margin-bottom: 10px; } }
