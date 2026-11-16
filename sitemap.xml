@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://datawiseacademy.com/hello-world/</loc></url>
   <url><loc>https://datawiseacademy.com/</loc></url>
-  <url><loc>https://datawiseacademy.com/sample-page/</loc></url>
-  <url><loc>https://datawiseacademy.com/thank-you/</loc></url>
-  <url><loc>https://datawiseacademy.com/contacts/</loc></url>
   <url><loc>https://datawiseacademy.com/about-us/</loc></url>
-  <url><loc>https://datawiseacademy.com/program/ai-enhanced-analytics-mastery/</loc></url>
-  <url><loc>https://datawiseacademy.com/program/leadership-in-the-ai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/contacts/</loc></url>
+  <url><loc>https://datawiseacademy.com/privacy-policy/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/master-data-in-the-ai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/machine-learning-for-business/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/advanced-reporting-in-the-genai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/advanced-data-wrangling-and-visualization/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/lead-in-the-ai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/empowered-leadership-in-the-ai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/data-governance-in-the-ai-era/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/applied-hackathons/</loc></url>
+  <url><loc>https://datawiseacademy.com/program/master-class-series/</loc></url>
   <url><loc>https://datawiseacademy.com/program/silicon-valley-immersion/</loc></url>
-  <url><loc>https://datawiseacademy.com/program/mastering-data-foundations/</loc></url>
-  <url><loc>https://datawiseacademy.com/category/uncategorized/</loc></url>
-  <url><loc>https://datawiseacademy.com/author/gauthierv/</loc></url>
 </urlset>

@@ -9,6 +9,14 @@
     var output = form.querySelector('.wpcf7-response-output');
     var submit = form.querySelector('[type="submit"]');
 
+    // Preselect the program when arriving from a program page (?program=<slug>).
+    var programSlug = new URLSearchParams(window.location.search).get('program');
+    if (programSlug) {
+      form.querySelectorAll('select option[data-slug]').forEach(function (option) {
+        if (option.getAttribute('data-slug') === programSlug) option.selected = true;
+      });
+    }
+
     function setState(state, message) {
       form.classList.remove('init', 'submitting', 'invalid', 'failed', 'sent');
       form.classList.add(state);
@@ -30,7 +38,7 @@
     function validate() {
       clearTips();
       var ok = true;
-      form.querySelectorAll('input, textarea').forEach(function (field) {
+      form.querySelectorAll('input, textarea, select').forEach(function (field) {
         if (field.type === 'hidden' || field.type === 'submit' || field.name === '_gotcha') return;
         if (field.checkValidity()) return;
         ok = false;
@@ -41,7 +49,9 @@
         tip.setAttribute('aria-hidden', 'true');
         tip.textContent = field.validity.typeMismatch
           ? 'Please enter a valid email address.'
-          : 'Please fill out this field.';
+          : field.tagName === 'SELECT'
+            ? 'Please select an option.'
+            : 'Please fill out this field.';
         field.insertAdjacentElement('afterend', tip);
       });
       return ok;
@@ -54,7 +64,7 @@
         return;
       }
       if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-        setState('failed', 'The contact form is not configured yet. Please email us directly.');
+        setState('failed', 'The contact form is not configured yet. Please email us at info@datawiseacademy.com.');
         return;
       }
       setState('submitting');
@@ -72,7 +82,7 @@
           if (form.dataset.redirect) window.location.href = form.dataset.redirect;
         })
         .catch(function () {
-          setState('failed', 'There was an error trying to send your message. Please try again later.');
+          setState('failed', 'There was an error trying to send your message. Please try again later or email us at info@datawiseacademy.com.');
         })
         .finally(function () {
           if (submit) submit.disabled = false;
