@@ -330,3 +330,41 @@
 
 /* Contact page: social icons removed (they are in the footer), so drop the space that was reserved for them */
 .page-contacts .contacts__text { margin-bottom: 0; }
+
+/* ---------- Contact page: "What happens next" + trust line ---------- */
+.page-contacts .contacts__inner { justify-content: flex-start; gap: 28px; }
+.contacts__next-title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 0 0 14px;
+}
+.contacts__steps { list-style: none; counter-reset: step; padding: 0; margin: 0 0 22px; }
+.contacts__steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 14px;
+  line-height: 1.4;
+  min-height: 28px;
+}
+.contacts__steps li::before {
+  content: counter(step);
+  position: absolute; left: 0; top: -2px;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--clr-04);
+  font-weight: 700;
+  font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.contacts__trust { font-size: 14px; line-height: 1.5; margin: 0; font-style: italic; }
+
+/* ---------- Thank-you page: next links ---------- */
+.thank-you__links { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 36px; position: relative; z-index: 1; }
+.thank-you__link-secondary { background: transparent; border: 2px solid #1E1E1E; color: #1E1E1E; }
+.thank-you__link-secondary:hover { background: #1E1E1E; color: #fff; }
+
+.nowrap { white-space: nowrap; }

@@ -131,6 +131,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 					<div class="contacts__phone"><strong>Phone Number:</strong> <a href="tel:+16503874412" target="_blank">+1 650 387 4412</a></div>
 					<div class="contacts__phone contacts__email"><strong>Email:</strong> <a href="mailto:info@datawiseacademy.com">info@datawiseacademy.com</a></div>
 				  </div>
+				  <div class="contacts__next">
+					<h3 class="contacts__next-title">What happens next</h3>
+					<ol class="contacts__steps">
+					  <li><strong>We reply within 24–48 hours</strong></li>
+					  <li><strong>A short call</strong> to understand your team and goals</li>
+					  <li><strong>A proposal</strong> tailored to your team</li>
+					</ol>
+					<p class="contacts__trust">Trusted by teams at Airbus, Google, Nissan, Allianz, MacPaw, SalonCentric, and Galia.</p>
+				  </div>
 				  </div>
 			  </div>
 			  <div class="contacts__col">
@@ -143,26 +152,36 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
 <div class="form-row">
 	<div class="form-col">
-		<p><span class="wpcf7-form-control-wrap" data-name="first-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First name*" value="" type="text" name="first-name" required /></span>
+		<p><span class="wpcf7-form-control-wrap" data-name="first-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First name*" value="" type="text" name="first-name" aria-label="First name" required /></span>
 		</p>
-		<p><span class="wpcf7-form-control-wrap" data-name="last-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last name*" value="" type="text" name="last-name" required /></span>
+		<p><span class="wpcf7-form-control-wrap" data-name="last-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Last name*" value="" type="text" name="last-name" aria-label="Last name" required /></span>
 		</p>
 	</div>
 	<div class="form-col">
-		<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="email" required /></span>
+		<p><span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" autocomplete="email" aria-required="true" aria-invalid="false" placeholder="Email*" value="" type="email" name="email" aria-label="Email" required /></span>
 		</p>
 		<p><span class="wpcf7-form-control-wrap" data-name="interested-in"><select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false" aria-label="Interested in" name="interested-in" required><option value="" disabled selected>Interested in*</option><optgroup label="Training Courses"><option value="Master Data in the AI Era" data-slug="master-data-in-the-ai-era">Master Data in the AI Era</option><option value="Machine Learning for Business" data-slug="machine-learning-for-business">Machine Learning for Business</option><option value="Advanced Reporting in the GenAI Era" data-slug="advanced-reporting-in-the-genai-era">Advanced Reporting in the GenAI Era</option><option value="Advanced Data Wrangling and Visualization in the GenAI Era" data-slug="advanced-data-wrangling-and-visualization">Advanced Data Wrangling and Visualization in the GenAI Era</option><option value="Data Governance in the AI Era" data-slug="data-governance-in-the-ai-era">Data Governance in the AI Era</option></optgroup><optgroup label="Executive Sessions"><option value="Lead in the AI Era" data-slug="lead-in-the-ai-era">Lead in the AI Era</option><option value="Empowered Leadership in the AI Era" data-slug="empowered-leadership-in-the-ai-era">Empowered Leadership in the AI Era</option></optgroup><optgroup label="Applied Hackathons"><option value="Applied Hackathons" data-slug="applied-hackathons">Applied Hackathons</option></optgroup><optgroup label="Executive Series"><option value="Master Class Series" data-slug="master-class-series">Master Class Series</option></optgroup><optgroup label="Learning Expeditions"><option value="Silicon Valley Immersion" data-slug="silicon-valley-immersion">Silicon Valley Immersion</option></optgroup><option value="Other / not sure yet">Other / not sure yet</option></select></span>
 		</p>
 	</div>
 </div>
 <div class="form-row">
-	<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message" name="your-message"></textarea></span>
+	<div class="form-col">
+		<p><span class="wpcf7-form-control-wrap" data-name="company"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" aria-label="Company" placeholder="Company*" value="" type="text" name="company" autocomplete="organization" required /></span>
+		</p>
+	</div>
+	<div class="form-col">
+		<p><span class="wpcf7-form-control-wrap" data-name="team-size"><select class="wpcf7-form-control wpcf7-select" aria-invalid="false" aria-label="Team size (optional)" name="team-size"><option value="" selected>Team size (optional)</option><option>1–10 people</option><option>11–25 people</option><option>26–40 people</option><option>More than 40 people</option></select></span>
+		</p>
+	</div>
+</div>
+<div class="form-row">
+	<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Tell us about your team, your goals, and your timing" name="your-message" aria-label="Message"></textarea></span>
 	</p>
 </div>
 <div class="form-row">
 	<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Send Message" /><span class="wpcf7-spinner"></span>
 	</p>
-</div><p class="form-consent">By submitting this form, you agree to our <a href="../privacy-policy/">Privacy Policy</a>.</p><div class="wpcf7-response-output" aria-hidden="true"></div>
+</div><p class="form-consent">We reply within 24–48 hours. By submitting this form, you agree to our <a href="../privacy-policy/">Privacy Policy</a>.</p><div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
 </div>
 				</div>
