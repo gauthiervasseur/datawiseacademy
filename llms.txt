@@ -2,7 +2,7 @@
 
 > Data Wise Academy is a Menlo Park, California–based company that trains executives, managers, and analysts to turn data and AI into business impact through hands-on training courses, applied hackathons, executive master classes, and Silicon Valley learning expeditions.
 
-AI is the future, but data is the foundation. Every program rests on the same proven frameworks (VORTEX™, FAIR, TACTICAL™, ARSENAL™, ISWEAR™), combines practical foundations with hackathons on real data, and is supported by Expert Teaching Assistants. The approach is vendor-agnostic.
+AI is the future, but data is the foundation. Every program rests on the same proven frameworks (VORTEX™, FAIR, TACTICAL™, ARSENAL™, ISWEAR™), combines practical foundations with hackathons on real data, and is supported by AI & Data Facilitators. The approach is vendor-agnostic.
 
 Contact: info@datawiseacademy.com · +1 650 387 4412 · 1285 Woodland Avenue, Menlo Park, CA 94025, USA. Pricing is provided on request.
 
@@ -15,7 +15,7 @@ Contact: info@datawiseacademy.com · +1 650 387 4412 · 1285 Woodland Avenue, Me
 - [Lead in the AI Era](https://datawiseacademy.com/program/lead-in-the-ai-era/): Executive Session, 2 hours, for executive leaders. An executive session on leading AI transformation: the VORTEX™ of mounting pressures, FAIR data, the TACTICAL™ framework, and what to sponsor, fund, and demand from teams.
 - [Empowered Leadership in the AI Era](https://datawiseacademy.com/program/empowered-leadership-in-the-ai-era/): Executive Session, 3 hours, for business leaders. An executive session on creating the conditions for data, AI, ML, and GenAI to deliver reliable business value, including machine learning essentials and change management.
 - [Data Governance in the AI Era](https://datawiseacademy.com/program/data-governance-in-the-ai-era/): Training Course, 1 day, for data leaders, business analysts, and BI analysts. Build data quality into the pipeline with profiling, cleansing techniques, quality rules, ownership, stewardship, and lineage.
-- [Applied Hackathons](https://datawiseacademy.com/program/applied-hackathons/): Applied Hackathon, 1 or 2 days, for data project leaders, BI analysts, and Excel analysts. Teams solve a real data challenge with their own data in one or two days, supported by Expert Teaching Assistants, and present the result to leadership.
+- [Applied Hackathons](https://datawiseacademy.com/program/applied-hackathons/): Applied Hackathon, 1 or 2 days, for data project leaders, BI analysts, and Excel analysts. Teams solve a real data challenge with their own data in one or two days, supported by AI & Data Facilitators, and present the result to leadership.
 - [Master Class Series](https://datawiseacademy.com/program/master-class-series/): Executive Series, 4 to 7 sessions, for executives and senior leaders, as well as business analytics and IT professionals. A curated series of executive master classes on practical analytics, AI, and GenAI techniques, delivered with experts from UC Berkeley, Stanford, Northeastern, industry, and government.
 - [Silicon Valley Immersion](https://datawiseacademy.com/program/silicon-valley-immersion/): Learning Expedition, 3 to 6 days in the Bay Area, for executive teams and senior leaders, innovation and transformation leaders, and entrepreneurs and high-potential managers. A learning expedition in the San Francisco Bay Area hosted at UC Berkeley Haas, with faculty sessions, company visits, startup pitches, and networking.
 

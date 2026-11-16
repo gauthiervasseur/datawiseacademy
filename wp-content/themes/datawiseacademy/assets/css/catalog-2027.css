@@ -426,3 +426,36 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .person__name a, .person__photo-link { color: inherit; text-decoration: none; }
 .person__name a:hover { color: var(--clr-04); }
 .about__founder a { font-weight: 600; }
+
+/* ---------- AI & Data Facilitators ---------- */
+.team__intro { max-width: 760px; margin: 18px 0 0; }
+.team--instructors .person__name { font-size: 17px; }
+.team--instructors .person__position { margin-bottom: 8px; font-size: 16px; font-weight: 600; color: #1E1E1E; }
+.person__more { text-align: center; font-size: 14px; margin-bottom: 14px; }
+.person__more summary {
+  cursor: pointer;
+  display: inline-block;
+  list-style: none;
+  font-weight: 600;
+  color: #6b5a45;
+  text-decoration: underline;
+  text-decoration-color: var(--clr-04);
+  text-underline-offset: 3px;
+}
+.person__more summary::-webkit-details-marker { display: none; }
+.person__more summary::after { content: " ▾"; color: var(--clr-04); }
+.person__more[open] summary::after { content: " ▴"; }
+.person__more summary:focus-visible { outline: 2px solid #1E1E1E; outline-offset: 2px; }
+.person__more p { margin: 8px 0 0; line-height: 1.45; text-align: center; }
+.team--instructors .person__social { margin-top: 0; }
+
+/* Phones: two-column grid with smaller photos instead of one long stack */
+@media (max-width: 47.99em) {
+  .team--instructors .team__row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 14px; margin-top: 30px; }
+  .team--instructors .team__col { width: auto; min-width: 0; }
+  .team--instructors .person__img { margin-bottom: 12px; }
+  .team--instructors .person__img img { width: 130px; }
+  .team--instructors .person__name { font-size: 15px; }
+  .team--instructors .person__position { font-size: 13px; }
+  .person__more { font-size: 13px; margin-bottom: 10px; }
+}
