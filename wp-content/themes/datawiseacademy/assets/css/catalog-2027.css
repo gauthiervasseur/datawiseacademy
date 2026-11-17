@@ -417,6 +417,11 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .founder__role { font-weight: 600; font-size: 20px; text-transform: uppercase; margin: 10px 0 0; }
 .founder__bio p { margin: 0 0 18px; }
 .founder__bio h2 { font-weight: 700; font-size: 20px; text-transform: uppercase; margin: 36px 0 14px; }
+.founder__courses { list-style: none; padding: 0; margin: 0 0 8px; display: grid; gap: 8px; }
+@media (min-width: 48em) { .founder__courses { grid-template-columns: 1fr 1fr; } }
+.founder__courses li { border-left: 3px solid var(--clr-04); padding: 4px 0 4px 12px; }
+.founder__courses b { display: block; font-weight: 600; }
+.founder__courses span { font-size: 13px; opacity: .75; }
 .founder__media { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .founder__media li { background: #fff; border: 1px solid rgba(30,30,30,.12); border-radius: 14px; padding: 14px 18px; }
 .founder__media .kind { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--clr-04); }
