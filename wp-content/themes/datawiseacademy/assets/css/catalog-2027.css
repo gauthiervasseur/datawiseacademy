@@ -422,9 +422,14 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .founder__courses li { border-left: 3px solid var(--clr-04); padding: 4px 0 4px 12px; }
 .founder__courses b { display: block; font-weight: 600; }
 .founder__courses span { font-size: 13px; opacity: .75; }
+.founder__media li[hidden] { display: none; }
+.founder__more { margin-top: 18px; padding: 12px 32px 10px; min-height: 40px; border: 0; border-radius: 7px; cursor: pointer;
+  font: inherit; font-weight: 500; line-height: 1.2; text-transform: uppercase; color: var(--clr-02); background-color: var(--clr-01); }
+.founder__more:hover, .founder__more:focus-visible { color: var(--clr-01); background-color: var(--clr-02); outline: 2px solid var(--clr-01); }
 .founder__media { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .founder__media li { background: #fff; border: 1px solid rgba(30,30,30,.12); border-radius: 14px; padding: 14px 18px; }
 .founder__media .kind { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--clr-04); }
+.founder__media .title { display: block; }
 .founder__media a { color: inherit; text-decoration: underline; text-decoration-color: var(--clr-04); text-underline-offset: 3px; }
 
 /* Links to the founder page */
