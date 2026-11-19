@@ -430,7 +430,7 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .founder__media li { background: #fff; border: 1px solid rgba(30,30,30,.12); border-radius: 14px; padding: 14px 18px; }
 .founder__media .kind { display: block; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--clr-04); }
 .founder__media .title { display: block; }
-.founder__media a { color: inherit; text-decoration: underline; text-decoration-color: var(--clr-04); text-underline-offset: 3px; }
+.founder__media a, .founder__bio a { color: inherit; text-decoration: underline; text-decoration-color: var(--clr-04); text-underline-offset: 3px; }
 
 /* Links to the founder page */
 .person__name a, .person__photo-link { color: inherit; text-decoration: none; }
