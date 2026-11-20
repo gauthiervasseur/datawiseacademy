@@ -517,6 +517,7 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 }
 .team--instructors .person__position { min-height: 0; align-items: flex-start; }
 .team--instructors .person__tags { align-content: flex-start; margin-bottom: 12px; }
+.team--instructors .person__tags { flex-direction: column; flex-wrap: nowrap; align-items: center; }  /* one tag per line, so every card has the same height */
 .team--instructors .person__social { margin-top: 0; margin-bottom: 44px; }
 @media (max-width: 47.99em) { .team--instructors .person__social { margin-bottom: 30px; } }
 
@@ -554,7 +555,7 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .cm__map svg { display: block; width: 100%; height: auto; }
 .cm__sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .cm__panels { display: none; }
-.cm__panels h2 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin: 14px 16px 4px; }
+.cm__panel-title { font-size: 13px; font-weight: 700; line-height: 1.5; text-transform: uppercase; letter-spacing: .05em; margin: 14px 16px 4px; }
 .cm__panel .cm__lbl { font-size: 20px; stroke-width: 6px; }
 .cm__land { fill: var(--clr-05); }
 .cm__pt circle { fill: var(--clr-04); fill-opacity: .88; stroke: #fff; stroke-width: 1.5; transition: r .35s ease, opacity .35s ease, fill-opacity .35s ease; }
@@ -578,8 +579,11 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 .cl2__grid small { font-size: 12px; opacity: .6; margin-top: 4px; }
 .cl2__more { margin-top: 18px; padding: 12px 32px 10px; min-height: 40px; border: 0; border-radius: 7px; cursor: pointer; font: inherit; font-weight: 500; line-height: 1.2; text-transform: uppercase; color: var(--clr-02); background-color: var(--clr-01); }
 .cl2__more:hover, .cl2__more:focus-visible { color: var(--clr-01); background: var(--clr-02); outline: 2px solid var(--clr-01); }
-/* Home page "Clients" section: same row of numbers, sector shortcuts, and button to /clients/ */
-.clients .cs { margin: 10px 0 34px; }
+/* Home page "Clients" section: subtitle and paragraph (as in Programs), row of numbers, sector shortcuts, button to /clients/ */
+.clients__title { color: #1E1E1E; margin-top: 15px; }
+.clients__text { margin-bottom: 30px; }
+@media (min-width: 62em) { .clients__title { margin-top: 30px; } }
+.clients .cs { margin: 0 0 34px; }
 .clients__more { margin: 34px 0 0; display: flex; flex-direction: column; align-items: center; text-align: center; }
 .clients__by { margin: 0 0 12px; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
 .cl2__chips { list-style: none; margin: 0 0 26px; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
@@ -607,3 +611,26 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
   .cm__panels { display: block; }
   .cm__map { padding: 2px 0 8px; }
 }
+
+/* Home page "Testimonials" section: subtitle and paragraph, as in Programs and Clients */
+.reviews__title { color: #1E1E1E; margin-top: 15px; }
+.reviews__text { margin-bottom: 30px; }
+@media (min-width: 62em) { .reviews__title { margin-top: 30px; } }
+.clients-reviews .container .section-title { margin-bottom: 0; }  /* the heading's own large gap would separate it from the subtitle */
+.reviews__text { margin-bottom: 45px; }
+
+/* Home page "Executive Team" section: subtitle and paragraph, as in Programs, Clients, and Testimonials */
+.team__subtitle { color: #1E1E1E; margin-top: 15px; }
+.team__text { max-width: 760px; }
+@media (min-width: 62em) { .team__subtitle { margin-top: 30px; } }
+
+/* Contact and thank-you headings are now h1 (one main heading per page); keep their original look */
+h1.page-content { margin: 0; }
+
+/* Heading order: these were p/div/h3 and are now h2 (program section titles, contact "What happens next")
+   or h1 (404 message). Reset heading defaults so they look exactly as before. */
+.program__topics > h2.program__section-title { font: inherit; color: inherit; margin: 0; text-transform: none; letter-spacing: normal; }
+h2.program__takeaway-label { font-family: inherit; font-size: 14px; font-weight: 700; line-height: 21px; margin: 0 0 8px; }
+
+/* Executive Team on tablets (768–991px): equal columns, so a longer job title doesn't shrink the other photos */
+@media (min-width: 48em) and (max-width: 61.99em) { .team:not(.team--instructors) .team__col { flex: 1 1 0; min-width: 0; } }
