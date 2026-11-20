@@ -22,6 +22,7 @@ Contact: info@datawiseacademy.com · +1 650 387 4412 · 1285 Woodland Avenue, Me
 ## About
 
 - [About Data Wise Academy](https://datawiseacademy.com/about-us/): mission, four pillars, and method
+- [Clients](https://datawiseacademy.com/clients/): 117 client organizations by sector and city, with a map
 - [Method](https://datawiseacademy.com/#method): VORTEX™, FAIR, TACTICAL™, ARSENAL™, and ISWEAR™ frameworks
 - [Contact](https://datawiseacademy.com/contacts/): request information about a program
 
