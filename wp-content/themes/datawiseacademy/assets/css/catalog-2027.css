@@ -537,7 +537,8 @@ mark.pending { background: #FFE58A; color: inherit; padding: 0 3px; border-radiu
 
 /* ---------- Clients page (/clients/): stats row, sector filters, map, client tiles ---------- */
 .cl2 { padding-bottom: 80px; }
-.cl2__intro { max-width: 720px; margin: 16px 0 26px; }
+.cl2__intro { max-width: 720px; margin: 0 0 30px; }
+.cl2__intro p { margin: 0; }
 .cs { list-style: none; margin: 0 0 30px; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); border-top: 2px solid var(--clr-04); border-bottom: 1px solid rgba(30, 30, 30, .12); }
 .cs li { padding: 18px 16px 16px; border-left: 1px solid rgba(30, 30, 30, .12); }
 .cs li:first-child { border-left: 0; padding-left: 0; }
